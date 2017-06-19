@@ -1,0 +1,24 @@
+{
+  "name": "week-5-checkpoint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoganMcDonald/week-5-checkpoint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoganMcDonald/week-5-checkpoint/issues"
+  },
+  "homepage": "https://github.com/HoganMcDonald/week-5-checkpoint#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.7"
+  }
+}

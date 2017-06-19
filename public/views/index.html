@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> week 5 checkpoint</title>
+  <!-- Scripts and vendors -->
+  <script src="vendors/angular.min.js" charset="utf-8"></script>
+  <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+  <script src="scripts/controller.js" charset="utf-8"></script>
+  <script src="scripts/services/service.js" charset="utf-8"></script>
+  <!-- Stylesheets -->
+  <!-- <link rel="stylesheet" href="/vendors/bootstrap.css"> -->
+  <link rel="stylesheet" href="/styles/main.min.css">
+</head>
+
+<body ng-app="myApp" ng-controller="MainController as mc" ng-init="mc.getMessages()">
+  <h1>Hogan's Final Checkpoint</h1>
+  <!-- input div -->
+  <div class="container">
+    <input id="name" type="text" placeholder="name" ng-model="mc.name">
+    <textarea id="message" rows="3" cols="60" placeholder="message" ng-model="mc.message"></textarea>
+    <button type="button" id="submit" ng-click="mc.sendInputs()">Submit</button>
+  </div>
+
+  <!-- output div -->
+  <div class="container">
+    <div class="message" ng-repeat="message in mc.messages">
+      <h2>{{message.name}}</h2>
+      <p>{{message.message}}</p>
+    </div>
+  </div>
+</body>
+
+</html>

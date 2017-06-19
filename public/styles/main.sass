@@ -1,0 +1,53 @@
+//colors
+$white: rgb(255, 255, 255)
+$borders: rgb(156, 156, 156)
+$page-background: rgb(219, 232, 224)
+$buttons: rgb(88, 167, 86)
+
+//global values
+$corners: 5px
+
+//mixins
+
+//styles
+body
+  font:
+    family: 'open sans'
+  background-color: $page-background
+  text-align: center
+
+  .container
+    background-color: $white
+    border:
+      width: 1px
+      style: solid
+      color: $borders
+      radius: $corners
+    padding: 15px
+    margin: auto
+    margin-top: 10px
+    max-width: 500px
+    box-shadow: 0px 0px 2px 1px $borders
+    text-align: center
+
+    #name
+      display: block
+      margin: auto
+
+    #message
+      display: block
+      margin: auto
+      margin-top: 15px
+
+    #submit
+      border:
+        radius: $corners
+        width: 1px
+        color: $borders
+      background-color: $buttons
+      font:
+        family: 'open sans'
+        size: 12pt
+      margin-left: auto
+      margin-right: auto
+      margin-top: 15px
